@@ -1,0 +1,195 @@
+
+/*display ser para organizar e separar as divs[caixas] ex: display: table-cell 
+- display: flex; -> serve para organizar as divs uma ao lado da outra automaticamente
+- justify-content: center; alinha tudo que esta dentro da div para meio, 
+mantendo centralizado o conteudo.
+- Um " * " tem a mesma importancia que o body na estilizacao de varios 
+elementos da pagina.*/
+body {
+    margin: 0px;
+    background-color: silver;
+    background-image: radial-gradient(circle at 50% -20.71%, #a3a7ff 0, #7a8ffc 25%, #3c78f2 50%, #0063e8 75%, #0051de 100%);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#header {
+    margin: 0px;
+    height: 112px;
+    width: 100%;
+    border: 1px transparent;
+    box-shadow: 0px 0px 0px 0px;
+    color:#000;
+    background-color: steelblue;
+    background: rgb(0, 0, 0) transparent; /*cor transparente em RGB*/
+    background: rgba(0, 0, 0, 0.3); 
+}
+footer {
+    bottom: 0;
+    /*position: fixed; MANTEM A DIV FIXADA MESMO AO MOVER A PAGINA*/
+    clear: both;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    border: none;
+    box-shadow: 0px 0px 0px 0px;
+    color:#000;
+    background-color: steelblue;
+    background: rgb(0, 0, 0) transparent; /*cor transparente em RGB*/
+    background: rgba(0, 0, 0, 0.3); 
+}
+#container {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 15px;
+    border: 1px solid transparent;
+    height: auto;
+    width: 80%;
+    box-shadow: 0px 0px 8px 0px; /*essa linha cria uma camada de sombra*/
+    color:#000;
+    border-radius: 25px;
+    background-color: steelblue;
+    background: rgb(0, 0, 0) transparent; /*cor transparente em RGB*/
+    background: rgba(0, 0, 0, 0.3);
+}
+table {
+    background: rgb(0, 0, 0) transparent; /*cor transparente em RGB*/
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    width: 100%;
+    height: auto;
+}
+.btNav {
+    margin: 2%;
+    margin-right: 10%;
+    float: right;
+}
+.box {
+    margin: 0 auto;
+    border: 1px solid transparent;
+    height: 380px;
+    width: 480px;
+    border-radius: 35px;
+    background-color: steelblue;
+    background: rgb(0, 0, 0) transparent; /*cor transparente em RGB*/
+    background: rgba(0, 0, 0, 0.3);
+}
+.foto {
+    margin:auto;
+    width: auto;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+.foto img {
+    width: 100%;
+    height: 100%;
+    transition: all 5s ease;
+}
+.foto img:hover {
+    transform: scale(5.5);
+}
+.js {
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+}
+.logo {
+    margin: 5px;
+    background-image: url("imgs/logo.png");
+    border: 1px transparent;
+    float: left;
+    background-size: 100%;
+    border-radius: 50px 50px;
+    box-shadow: 0px 0px 5px 0px;
+    color: black;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    overflow:hidden;
+    transition:all 1s ease;/*transition of 2 seconds on image*/
+}
+.logo:hover{
+    background-color:#000;
+    box-shadow: 0px 0px 8px 0px #fff;
+    /*zoom: 150%; essa linha define um expansao do arq*/
+    border-radius: 50px 50px;
+    transform: scale(1); /*animation image*/
+}
+.profPic {
+    height: 180px;
+    width: 180px;
+    float: right;
+    border: 1px transparent;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px 0px #000;
+    background-image: url("imgs/smile.png");
+    background-size: 100%;
+    overflow:hidden;
+    transition:all 1s ease;
+}
+.profPic:hover {
+    zoom: 100%;
+    transform: scale(1.1);
+}
+input {
+    text-align: center;
+    font-size: 16px;
+    background: rgb(0, 0, 0) transparent; /*cor transparente em RGB*/
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    color: white;
+    border: none;
+    margin-bottom: 10px;
+    height: 30px;
+    width: 60%;
+    outline: none;
+}
+h1 {
+    cursor: pointer;
+    border: 1px transparent;
+    height:auto;
+    width: 300px;
+    color:#fff;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+th {
+    font-size: 18px;
+    font-family:sans-serif;
+}
+td {
+    text-align:center;
+    height:50px;
+}
+.blue {
+    background-color: lightskyblue;
+}
+.td2 {
+    height:10px;
+}
+.bt1 {
+    height: 30px;
+    width: auto;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    background: rgb(0, 0, 0) transparent; /*cor transparente em RGB*/
+    background: rgba(0, 0, 0, 0.3);
+}
+.bt1:hover {
+    color: white;
+    background-color: black;
+}
+.exerc {
+    margin:auto;
+    margin-bottom: 30px;
+    border: 1px transparent;
+    height: auto;
+    width:80%;
+    color: white;
+}
